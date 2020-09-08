@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from "./core/Home";
 import Login from "./admin/Login";
+import Menu from "./core/Menu";
 
 const MainRouter = () => {
   return (

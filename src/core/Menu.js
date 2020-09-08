@@ -26,18 +26,8 @@ const Menu = ({ history }) => {
             <li className="nav-item">
               <Link
                 className="nav-link"
-                style={isActive(history, "/signup")}
-                to="/signup"
-              >
-                Signup
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                style={isActive(history, "/signin")}
-                to="/signin"
+                style={isActive(history, "/admin/login")}
+                to="/admin/login"
               >
                 Signin
               </Link>
@@ -59,24 +49,6 @@ const Menu = ({ history }) => {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link
-                className="nav-link disabled"
-                style={isActive(history, `/allusers`)}
-                to={`/allusers`}
-              >
-                All Users
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link disabled"
-                style={isActive(history, `/findpeople`)}
-                to={`/findpeople`}
-              >
-                Find People
-              </Link>
-            </li>
             <li className="nav-item">
               <Link
                 className="nav-link disabled"
