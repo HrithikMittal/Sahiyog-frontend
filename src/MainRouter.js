@@ -3,12 +3,12 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from "./core/Home";
 import Login from "./admin/Login";
-import Menu from "./core/Menu";
+import SideNavbar from "./core/Sidenavbar";
 
 const MainRouter = () => {
   return (
     <div>
-      <Menu></Menu>
+      <SideNavbar></SideNavbar>
       <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/admin/login" exact component={Login}></Route>
