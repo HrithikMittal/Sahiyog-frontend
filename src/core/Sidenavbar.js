@@ -32,10 +32,7 @@ const Sidenavbar = () => {
               </NavItem>
               <NavItem eventKey="admin/login">
                 <NavIcon>
-                  <i
-                    className="fa fa-fw fa-device"
-                    style={{ fontSize: "1.75em" }}
-                  />
+                  <i className="fa fa-sign-in" style={{ fontSize: "1.75em" }} />
                 </NavIcon>
                 <NavText>Login</NavText>
               </NavItem>
