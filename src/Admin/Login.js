@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "./node_modules/react";
 
 class Login extends Component {
   state = {
@@ -16,22 +16,22 @@ class Login extends Component {
     event.preventDefault();
     const { username, password } = this.state;
     const user = { username, password };
-    // login(user)
-    //   .then((data) => {
-    //     if (data.error) {
-    //       this.setState({ error: data.error });
-    //     } else {
-    //       this.setState({
-    //         error: "",
-    //         username: "",
-    //         password: "",
-    //         open: true,
-    //       });
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     console.log("Error", err);
-    //   });
+    login(user)
+      .then((data) => {
+        if (data.error) {
+          this.setState({ error: data.error });
+        } else {
+          this.setState({
+            error: "",
+            username: "",
+            password: "",
+            open: true,
+          });
+        }
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
   };
 
   render() {

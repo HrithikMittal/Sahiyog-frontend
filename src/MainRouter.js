@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Home from "./core/Home";
-import Login from "./Admin/Login";
+import Login from "./admin/Login";
 
 const MainRouter = () => {
   return (
