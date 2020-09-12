@@ -36,6 +36,15 @@ const Sidenavbar = () => {
                 </NavIcon>
                 <NavText>Login</NavText>
               </NavItem>
+              <NavItem eventKey="medicine">
+                <NavIcon>
+                  <i
+                    className="fa fa-fw fa-home"
+                    style={{ fontSize: "1.75em" }}
+                  />
+                </NavIcon>
+                <NavText>Medicines</NavText>
+              </NavItem>
             </SideNav.Nav>
           </SideNav>
         </React.Fragment>
