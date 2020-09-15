@@ -42,8 +42,9 @@ class Medicine extends React.Component {
     console.log(id);
     e.preventDefault();
     axios
-      .delete(`https://sahiyog.herokuapp.com/medicine/deleteMedicine/:${id}`)
-      .then(() => {
+      .delete(`https://sahiyog.herokuapp.com/medicine/deleteMedicine/${id}`)
+      .then((res) => {
+        console.log(res);
         makeToast("success", "Deleted Succesfully !!");
         let medicines = [...this.state.medicines];
         medicines = medicines.filter((med) => med._id !== id);
